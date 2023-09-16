@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rock Scissors Paper Game</title>
+  
+</head>
+<body>
+  <h1>Tosh Qaychi Qog'oz o'yini. Menning ismim Denny, o'yinni boshlaymiz</h1>
+  <div class="container">
+    <div class="playground">
+        <div class="choices">
+            <button onclick="play('Tosh')">Tosh</button>
+            <button onclick="play('Qaychi')">Qaychi</button>
+            <button onclick="play('Qog\'oz')">Qog'oz</button>
+        </div>
+        <p class="result" id="result"></p>
+    </div>
+    <div class="scoreground">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>You</th>
+                    <th>Computer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+      </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

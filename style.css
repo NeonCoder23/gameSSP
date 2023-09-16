@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    background: #000016;
+}
+h1 {
+    text-align: center;
+    color: azure;
+}
+.container {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.container .playground {
+    width: 100%;
+    background: #000058;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .playground .choices {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    margin: 8px;
+}
+.container .playground .choices button {
+    background: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container .playground p.result {
+    color: aliceblue;
+    text-align: center;
+}
+.container .scoreground {
+    width: 100%;
+    position: relative;
+    padding: 12px;
+    background: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .scoreground table {
+    width: 50%;
+    position: relative;
+    border-collapse: collapse;
+}
+.container .scoreground table thead {
+    background: teal;
+}
+.container .scoreground table tbody {
+    background: skyblue;
+}
+.container .scoreground table td, th {
+    border: 1px solid aqua;
+    text-align: center;
+}
+
+
+@media (min-width:1024px){
+    h1 {
+        font-size: 48px;
+    }
+    .container .playground .choices button {
+        width: 150px;
+        height: 150px;
+    }
+    .container .playground p.result {
+        font-size: 22px;
+    }
+}
+@media (max-width:1023.9px){
+    h1 {
+        font-size: 30px;
+    }
+    .container .playground .choices button {
+        width: 115px;
+        height: 115px;
+    }
+    .container .playground p.result {
+        font-size: 20px;
+    }
+}
+@media (max-width:720px){
+    h1 {
+        font-size: 24px;
+    }
+    .container .playground .choices button {
+        width: 85px;
+        height: 85px;
+    }
+    .container .playground p.result {
+        font-size: 12px;
+    }
+}
